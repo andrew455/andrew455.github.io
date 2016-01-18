@@ -163,6 +163,19 @@ ul {
   font-family: typografix;
   src: url(fonts/Typografix-demo.otf);
 }
+p {
+  color: #828282;
+  line-height: 2em;
+}
+h2 {
+  font-size: 4em;
+  color: #00a69c;
+  flex: 1;
+  padding: 40px;
+  font-family: typografix;
+  font-weight: 100;
+  text-align: center;
+}
 .flex {
   display: flex;
 }
@@ -201,27 +214,34 @@ ul {
 }
 header {
   width: 100%;
-  text-align: center;
   flex-wrap: wrap;
   display: flex;
 }
 header .logo {
-  flex: 5;
+  flex: 4;
   display: block;
-  min-width: 25%;
-  background-color: cadetblue;
+  min-width: 20%;
+  padding-top: 20px;
 }
 .menu {
   display: flex;
   flex: 8;
+  align-items: center;
+  text-align: center;
 }
 .menu a {
   flex: 1;
   padding: 20px;
-  background-color: orange;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding: 80px 20px 70px 20px;
+  text-decoration: none;
+  color: #535353;
+  font-weight: bold;
+  font-size: 1.3em;
 }
 .menu a:hover {
-  background-color: #bc3a3a;
+  background-color: #f6f6f6;
 }
 .mob-menu {
   display: none;
@@ -234,15 +254,13 @@ header .logo {
 }
 .auspic {
   width: 100%;
-  background-color: firebrick;
   height: 400px;
-  background: url('img/header.jpg') center center;
+  background: url('img/header.jpg') center 0%;
   background-size: cover;
 }
 .box {
   width: 100%;
   display: flex;
-  background-color: mediumvioletred;
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -253,7 +271,7 @@ header .logo {
 }
 .box a .title {
   position: absolute;
-  left: 0px;
+  left: 0;
   bottom: 5%;
   width: 80%;
   background-color: rgba(0, 166, 156, 0.8);
@@ -272,7 +290,6 @@ header .logo {
 .half {
   flex-basis: 50%;
   padding: 20px;
-  background-color: darkorange;
 }
 .home-intro {
   line-height: 30px;
@@ -281,19 +298,13 @@ header .logo {
   width: 100%;
   max-height: 800px;
   text-align: center;
-  background-image: url('img/title-background.jpg');
-  background-position: 50% 50%;
+  background: url('img/title-background.jpg') 50% 50%;
   background-size: cover;
   display: flex;
   z-index: -101;
 }
 .section-title h2 {
-  font-size: 4em;
   color: white;
-  flex: 1;
-  padding: 40px;
-  font-family: typografix;
-  font-weight: 100;
 }
 .section-title-under {
   padding-top: 100px;
@@ -336,6 +347,49 @@ header .logo {
   font-style: italic;
   line-height: 42px;
   font-size: 1.7em;
+}
+.social {
+  display: flex;
+  margin-top: 1em;
+}
+.social .aus-news {
+  flex: 5;
+  margin-right: 2em;
+}
+.social .facebook {
+  flex: 2;
+  margin-top: 2em;
+}
+.social ul li {
+  display: flex;
+  align-items: flex-start;
+  border-bottom: solid 1px #a6a6a6;
+  padding: 2em 0 2em 0;
+}
+.social ul li img {
+  padding: 1em;
+  width: 40%;
+}
+.social ul li .article {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.social ul li .article h3 {
+  color: #00a69c;
+  margin: 0;
+  padding: 0;
+  font-size: 2em;
+  font-family: calibri;
+}
+.social ul li .article a {
+  color: #00a69c;
+  text-decoration: none;
+  font-weight: bold;
+}
+.social ul li:last-child {
+  border: none;
 }
 .footer-contact {
   width: 100%;
@@ -395,6 +449,9 @@ body[class='mobile'] .hide {
 }
 body[class='tablet'] {
   background-color: rgba(0, 0, 0, 0.88);
+}
+body[class='tablet'] .facebook {
+  display: none;
 }
 body[class='tablet'] .wrap {
   width: 800px;

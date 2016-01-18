@@ -11,6 +11,24 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
     }
 
 @blue-fade: fade(#00a69c, 80%);
+@aus-blue: #00a69c;
+@text: #828282;
+@menu: #535353;
+
+p {
+  color: @text;
+  line-height: 2em;
+}
+
+h2 {
+  font-size: 4em;
+  color: @aus-blue;
+  flex: 1;
+  padding: 40px;
+  font-family: typografix;
+  font-weight:100;
+  text-align: center;
+}
 
 .flex {
     display: flex;
@@ -38,7 +56,6 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 
 /* Some default styles to make each box visible */
 body {
-
 }
 
 .wrap {
@@ -48,6 +65,7 @@ body {
 //    height: 100vh;
     margin: auto;
     overflow: hidden;
+
 }
 
 .content {
@@ -59,26 +77,33 @@ body {
 header {
     width: 100%;
     display: flex;
-    text-align: center;
     flex-wrap: wrap;
     display: flex;
     .logo {
-        flex: 5;
+        flex: 4;
         display: block;
-        min-width: 25%;
-        background-color: cadetblue;
+        min-width: 20%;
+      padding-top:20px;
     }
 }
 .menu{
     display: flex;
     flex: 8;
+  align-items: center;
+  text-align: center;
     a {
         flex: 1;
         padding: 20px;
-        background-color: orange;
+      padding-top: 40px;
+      padding-bottom: 40px;
+      padding: 80px 20px 70px 20px;
+      text-decoration: none;
+      color: @menu;
+      font-weight: bold;
+      font-size: 1.3em;
     }
     a:hover {
-        background-color: darken(indianred,10%);
+      background-color: #f6f6f6;
     }
 }
 .mob-menu {
@@ -94,16 +119,14 @@ header {
 
 .auspic {
     width: 100%;
-    background-color: firebrick;
     height: 400px;
-    background: url('img/header.jpg') center center;
+    background: url('img/header.jpg') center 0%;
     background-size: cover;
 }
 
 .box {
     width: 100%;
     display: flex;
-    background-color: mediumvioletred;
     flex-wrap: wrap;
     justify-content: center;
     a {
@@ -112,7 +135,7 @@ header {
         position: relative;
         .title {
             position: absolute;
-            left: 0px;
+            left: 0;
             bottom: 5%;
             width: 80%;
             background-color: @blue-fade;
@@ -138,7 +161,6 @@ header {
 .half {
     flex-basis: 50%;
     padding: 20px;
-    background-color: darkorange;
 }
 
 .home-intro {
@@ -149,18 +171,12 @@ header {
     width: 100%;
     max-height: 800px;
     text-align: center;
-    background-image: url('img/title-background.jpg');
-    background-position: 50% 50%;
+    background: url('img/title-background.jpg') 50% 50%;
     background-size: cover;
     display: flex;
     z-index: -101;
     h2 {
-        font-size: 4em;
-        color: white;
-        flex: 1;
-        padding: 40px;
-        font-family:typografix;
-        font-weight:100;
+      color: white;
     }
 }
 
@@ -207,6 +223,53 @@ header {
             font-size: 1.7em;
         }
     }
+}
+
+.social {
+    display: flex;
+    margin-top: 1em;
+    .aus-news {
+        flex: 5;
+      margin-right: 2em;
+    }
+    .facebook {
+        flex: 2;
+      margin-top: 2em;
+    }
+    ul {
+      li {
+          display: flex;
+          align-items: flex-start;
+        border-bottom: solid 1px #a6a6a6;
+        padding: 2em 0 2em 0;
+
+          img{
+            padding: 1em;
+            width: 40%;
+          }
+          .article {
+              flex: 1;
+              display: flex;
+              flex-direction: column;
+              padding: 10px;
+              h3 {
+                  color: @aus-blue;
+                  margin: 0;
+                  padding: 0;
+                font-size: 2em;
+                font-family: calibri;
+              }
+            a {
+              color: @aus-blue;
+              text-decoration: none;
+              font-weight: bold;
+            }
+          }
+      }
+    }
+  ul li:last-child {
+    border: none;
+  }
 }
 
 .footer-contact {
@@ -298,6 +361,9 @@ header {
 body[class='tablet'] {
 background-color: rgba(0,0,0,0.88);
 
+.facebook {
+  display: none;
+}
 
 .wrap {
     width: 800px;
