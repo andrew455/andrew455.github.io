@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ausplay</title>
+  <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+</head>
+<body>
+  
+  <div class = 'wrap'>
+    <div class = 'dev-test'>
+        <a id = 'dev-mobile' href = '#'>
+            <i class="fa fa-mobile-phone"></i><span class = 'rez'> Phone</span>
+        </a>
+        <a id = 'dev-tablet' href="#">
+           <i class="fa fa-tablet"></i><span class = 'rez'> Tablet</span>
+        </a>
+        <a id = 'dev-desktop' href="#">
+            <i class="fa fa-desktop"></i><span class = 'rez'> Desktop</span>
+        </a>
+        <a id = 'dev-close' href="#"> X</a>
+    </div>
+      
+    <div class = 'content'>
+        <header>
+            <div class="logo">hi</div>
+                <a href = '#'>FIRST</a>
+                <a href = '#'>SECOND</a>
+                <a href = '#'>THIRD</a>
+                <a href = '#'>FOURTH</a>
+                <a href = '#'>FIFRTH</a>
+        </header>
+        
+        <div class = 'auspic'>
+            
+        </div>
+        
+        <div class = 'box'>
+            <div class = 'half'>
+                hik jslkfd jslkdfj psjdfhsd lksjdfh lksjdfh  lkjsdfhlksjdjfh lksjdfh lskjdkjfh lksd fhlksj dfhlksj dfhlkjsdhflkjs djfhkljs dhflkjsd hflkjsd fh
+            </div>
+            <div class = 'half'>
+                hi
+            </div>
+        </div>
+        
+        <div class = 'box'>
+            <a href = '#'>
+                <img src = 'img/playscapes.jpg' alt = 'Natural Playscapes'/>
+                <div class="title">Natural Playsacpes</div>
+            </a>
+            <a href = '#'><img src = 'img/playscapes.jpg' alt = 'Natural Playscapes'</a>
+            <a href = '#'><img src = 'img/playscapes.jpg' alt = 'Natural Playscapes'</a>
+            <a href = '#'><img src = 'img/playscapes.jpg' alt = 'Natural Playscapes'</a>
+        </div>
+        
+    </div>
+    
+            </a>
+    
+    <div class = 'section-title'>
+        <h2>Our Projects</h1>
+    </div>
+    
+    <div class = 'content'>
+        <div class = 'box box3'>
+            <a href = '#'>
+                <img src = 'img/playscapes.jpg' alt = 'Natural Playscapes'/>
+                <div class="title"><i class="fa fa-mobile-phone"></i> Natural Playsacpes</div>
+            </a>
+            <a href = '#'>
+                <img src = 'img/playscapes.jpg' alt = 'Natural Playscapes'/>
+                <div class="title"><i class="fa fa-mobile-phone"></i> Natural Playsacpes</div>
+            </a>
+            <a href = '#'>
+                <img src = 'img/playscapes.jpg' alt = 'Natural Playscapes'/>
+                <div class="title"><i class="fa fa-mobile-phone"></i> Natural Playsacpes</div>
+            </a>
+        </div>
+    </div>
+        
+    <div class = 'quote-box'>
+      <div class = 'quote-box-bg'></div>
+       <div class = 'quote-box-inner'>
+        <p>
+            <itatlic>“Would you like to provide a safe environment that offers diverse experiences that promote children's learning and development? “Would you like to provide a safe environment that offers diverse</itatlic>
+            <br><br>
+            <strong>By John</strong>
+        </p>
+        </div>
+    </div>
+
+    <div class = 'section-title section-title-under'>
+          <h2>Ausplay Social</h1>
+    </div>
+
+      <div class = 'content'>
+          <div class = 'box box3'>
+              <a href = '#'>
+                  <img src = 'img/playscapes.jpg' alt = 'Natural Playscapes'/>
+                  <div class="title"><i class="fa fa-mobile-phone"></i> Natural Playsacpes</div>
+              </a>
+              <a href = '#'>
+                  <img src = 'img/playscapes.jpg' alt = 'Natural Playscapes'/>
+                  <div class="title"><i class="fa fa-mobile-phone"></i> Natural Playsacpes</div>
+              </a>
+              <a href = '#'>
+                  <img src = 'img/playscapes.jpg' alt = 'Natural Playscapes'/>
+                  <div class="title"><i class="fa fa-mobile-phone"></i> Natural Playsacpes</div>
+              </a>
+          </div>
+      </div>
+
+      <div class = 'footer-contact'>
+          <a href='#'>
+              <i class="fa fa-mobile-phone"></i> info@ausplay.com.au
+          </a>
+          <a href='#'>
+              <i class="fa fa-mobile-phone"></i> 0452 459 456
+          </a>
+          <a href='#'>
+              <i class="fa fa-mobile-phone"></i> Unit 7
+          </a>
+          <a href='#'>
+              <i class="fa fa-mobile-phone"></i> 0452 459 456
+          </a>
+      </div>
+
+      <div class="footer"></div>
+
+  
+  </div>
+  
+
+</body>
+</html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+      
+    <script>
+    
+    $(function() {
+    
+    $('#dev-desktop').on('click',function(e) {
+        $('body').removeClass()
+     });
+                      
+      $('#dev-mobile').on('click',function(e) {
+          $('body').removeClass().addClass('mobile');
+      });
+        $('#dev-tablet').on('click',function(e) {
+          $('body').removeClass().addClass('tablet');
+      });
+        
+          $('#dev-close').on('click',function(e) {
+          console.log($('.dev-test'));
+              $('.dev-test').slideToggle();
+      });
+    });
+
+  </script>
