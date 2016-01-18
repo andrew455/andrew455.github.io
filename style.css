@@ -123,8 +123,6 @@ input[type=radio] {
 }
 input[type=search] {
   -webkit-appearance: textfield;
-  -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
   box-sizing: content-box;
 }
 input[type=search]::-webkit-search-cancel-button,
@@ -155,8 +153,6 @@ ul {
 }
 /* Box-sizing border-box */
 * {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 @font-face {
@@ -164,17 +160,26 @@ ul {
   src: url(fonts/Typografix-demo.otf);
 }
 .flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
 }
 .dev-test {
   border: solid 1px green;
   background-color: dodgerblue;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   text-align: center;
 }
 .dev-test a {
   font-size: 1.5em;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+  -webkit-box-flex: 2;
+  -webkit-flex: 2;
+  -ms-flex: 2;
   flex: 2;
   padding: 20px;
   color: white;
@@ -184,15 +189,24 @@ ul {
   background-color: #0077ea;
 }
 #dev-close {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
   flex: 1;
 }
 /* Some default styles to make each box visible */
 .wrap {
   max-width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
   flex-direction: column;
   margin: auto;
-  overflow: hidden;
 }
 .content {
   max-width: 1200px;
@@ -202,20 +216,37 @@ ul {
 header {
   width: 100%;
   text-align: center;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
 }
 header .logo {
+  -webkit-box-flex: 5;
+  -webkit-flex: 5;
+  -ms-flex: 5;
   flex: 5;
   display: block;
   min-width: 25%;
   background-color: cadetblue;
 }
 .menu {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex: 4;
+  -webkit-box-flex: 8;
+  -webkit-flex: 8;
+  -ms-flex: 8;
+  flex: 8;
 }
 .menu a {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
   flex: 1;
   padding: 20px;
   background-color: orange;
@@ -223,25 +254,44 @@ header .logo {
 .menu a:hover {
   background-color: #bc3a3a;
 }
-a.mob-menu {
+.mob-menu {
   display: none;
+  -webkit-box-flex: 2;
+  -webkit-flex: 2;
+  -ms-flex: 2;
   flex: 2;
+  background-color: darkmagenta;
+  min-width: 20%;
+}
+.mob-menu:hover {
+  background-color: #580058;
 }
 .auspic {
   width: 100%;
   background-color: firebrick;
-}
-.auspic img {
-  width: 100%;
+  height: 400px;
+  background: url('img/header.jpg') center center;
+  background-size: cover;
 }
 .box {
   width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   background-color: mediumvioletred;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 .box a {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 20%;
+  -ms-flex: 1 1 20%;
   flex: 1 1 20%;
   display: block;
   position: relative;
@@ -265,6 +315,8 @@ a.mob-menu {
   margin: 15px;
 }
 .half {
+  -webkit-flex-basis: 50%;
+  -ms-flex-preferred-size: 50%;
   flex-basis: 50%;
   padding: 20px;
   background-color: darkorange;
@@ -276,12 +328,18 @@ a.mob-menu {
   background-image: url('img/title-background.jpg');
   background-position: 50% 50%;
   background-size: cover;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   z-index: -101;
 }
 .section-title h2 {
   font-size: 4em;
   color: white;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
   flex: 1;
   padding: 40px;
   font-family: typografix;
@@ -306,6 +364,7 @@ a.mob-menu {
   left: 0;
   top: 0;
   background-color: #00a69c;
+  -webkit-transform: rotate(4deg);
   transform: rotate(4deg);
   z-index: -100;
 }
@@ -313,13 +372,27 @@ a.mob-menu {
   margin: auto;
   width: 80%;
   height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center;
   max-width: 1200px;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 .quote-box .quote-box-inner p {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 100%;
+  -ms-flex: 1 1 100%;
   flex: 1 1 100%;
   padding: 30px;
   color: white;
@@ -331,9 +404,15 @@ a.mob-menu {
 }
 .footer-contact {
   width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
 }
 .footer-contact a {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 100%;
+  -ms-flex: 1 1 100%;
   flex: 1 1 100%;
   padding: 30px;
   background-color: rgba(0, 166, 156, 0.8);
@@ -359,7 +438,15 @@ body[class='mobile'] .content {
 body[class='mobile'] .rez {
   display: none;
 }
+body[class='mobile'] .auspic {
+  height: 200px;
+  width: 100%;
+}
 body[class='mobile'] .menu {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
   flex-direction: column;
   min-width: 100%;
 }
@@ -367,15 +454,22 @@ body[class='mobile'] .mob-menu {
   display: block;
 }
 body[class='mobile'] .half {
+  -webkit-flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
   flex-basis: 100%;
 }
 body[class='mobile'] .box a {
   min-width: 300px;
 }
 body[class='mobile'] .quote-box-bg {
+  -webkit-transform: none;
   transform: none;
 }
 body[class='mobile'] .footer-contact {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 body[class='mobile'] .hide {
@@ -387,10 +481,16 @@ body[class='tablet'] {
 body[class='tablet'] .wrap {
   width: 800px;
 }
+body[class='tablet'] .auspic {
+  height: 300px;
+  width: 100%;
+}
 body[class='tablet'] .box a {
   min-width: 300px;
 }
 body[class='tablet'] .footer-contact a {
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   min-width: 45%;
 }
