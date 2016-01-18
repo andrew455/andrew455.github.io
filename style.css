@@ -331,7 +331,7 @@ header a:hover {
 }
 .footer {
   width: 100%;
-  background-color: yellow;
+  background-color: #25b756;
   height: 100px;
 }
 body[class='mobile'] {

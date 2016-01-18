@@ -142,14 +142,19 @@
     <script>
     
     $(function() {
+
+        if ($('body').width() <= 320) {
+            $('body').removeClass().addClass('mobile');
+        }
     
-    $('#dev-desktop').on('click',function(e) {
-        $('body').removeClass()
-     });
+        $('#dev-desktop').on('click',function(e) {
+            $('body').removeClass()
+         });
                       
-      $('#dev-mobile').on('click',function(e) {
-          $('body').removeClass().addClass('mobile');
-      });
+        $('#dev-mobile').on('click',function(e) {
+            $('body').removeClass().addClass('mobile');
+        });
+
         $('#dev-tablet').on('click',function(e) {
           $('body').removeClass().addClass('tablet');
       });
