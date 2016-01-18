@@ -163,6 +163,9 @@ ul {
   font-family: typografix;
   src: url(fonts/Typografix-demo.otf);
 }
+.flex {
+  display: flex;
+}
 .dev-test {
   border: solid 1px green;
   background-color: dodgerblue;
@@ -198,20 +201,31 @@ ul {
 }
 header {
   width: 100%;
-  display: flex;
   text-align: center;
+  flex-wrap: wrap;
+  display: flex;
 }
 header .logo {
-  flex: 3;
+  flex: 5;
+  display: block;
+  min-width: 25%;
   background-color: cadetblue;
 }
-header a {
+.menu {
+  display: flex;
+  flex: 4;
+}
+.menu a {
   flex: 1;
   padding: 20px;
   background-color: orange;
 }
-header a:hover {
+.menu a:hover {
   background-color: #bc3a3a;
+}
+a.mob-menu {
+  display: none;
+  flex: 2;
 }
 .auspic {
   width: 100%;
@@ -318,8 +332,6 @@ header a:hover {
 .footer-contact {
   width: 100%;
   display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .footer-contact a {
   flex: 1 1 100%;
@@ -347,8 +359,12 @@ body[class='mobile'] .content {
 body[class='mobile'] .rez {
   display: none;
 }
-body[class='mobile'] header {
+body[class='mobile'] .menu {
   flex-direction: column;
+  min-width: 100%;
+}
+body[class='mobile'] .mob-menu {
+  display: block;
 }
 body[class='mobile'] .half {
   flex-basis: 100%;
@@ -361,6 +377,9 @@ body[class='mobile'] .quote-box-bg {
 }
 body[class='mobile'] .footer-contact {
   flex-direction: column;
+}
+body[class='mobile'] .hide {
+  display: none;
 }
 body[class='tablet'] {
   background-color: rgba(0, 0, 0, 0.88);

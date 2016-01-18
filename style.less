@@ -12,6 +12,10 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 
 @blue-fade: fade(#00a69c, 80%);
 
+.flex {
+    display: flex;
+}
+
 .dev-test {
     border: solid 1px green;
     background-color: dodgerblue;
@@ -55,10 +59,18 @@ header {
     width: 100%;
     display: flex;
     text-align: center;
+    flex-wrap: wrap;
+    display: flex;
     .logo {
-        flex: 3;
+        flex: 5;
+        display: block;
+        min-width: 25%;
         background-color: cadetblue;
     }
+}
+.menu{
+    display: flex;
+    flex: 4;
     a {
         flex: 1;
         padding: 20px;
@@ -67,6 +79,10 @@ header {
     a:hover {
         background-color: darken(indianred,10%);
     }
+}
+a.mob-menu {
+    display: none;
+    flex: 2;
 }
 
 .auspic {
@@ -115,7 +131,6 @@ header {
 .half {
     flex-basis: 50%;
     padding: 20px;
-○
     background-color: darkorange;
 }
 
@@ -168,7 +183,6 @@ header {
         display: flex;
         justify-content: center;
         align-items: center;
-//        width: 800px;
         max-width: 1200px;
         flex-wrap: wrap;
         p {
@@ -187,10 +201,6 @@ header {
 .footer-contact {
     width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    //flex-wrap: wrap;
-    
     a {
         flex: 1 1 100%;
         padding: 30px;
@@ -215,13 +225,8 @@ header {
 body[class='mobile'] {
 background-color: rgba(0,0,0,0.88);
 
-div {
-
-}
-
 .wrap {
     width: 320px;
-
 }
 
 .content {
@@ -232,7 +237,21 @@ div {
     display: none;
 }
 
-header {flex-direction: column;}
+header {
+
+}
+
+.menu {
+    flex-direction: column;
+
+    min-width: 100%;
+    a {
+
+    }
+}
+.mob-menu {
+    display: block;
+}
 
 .half {
     flex-basis: 100%;
@@ -250,6 +269,9 @@ header {flex-direction: column;}
     flex-direction: column;
 }
 
+    .hide {
+        display: none
+    }
 }
 
 ///////////////////////

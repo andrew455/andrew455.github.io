@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ausplay</title>
   <link rel="stylesheet" href="style.css">
+
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 </head>
@@ -26,12 +27,15 @@
       
     <div class = 'content'>
         <header>
-            <div class="logo">hi</div>
+            <div class="logo">hi hi hi h i hi  hihi</div>
+            <a class = 'mob-menu' href = '#'><i class="fa fa-mobile-phone"></i></a>
+            <div class = 'menu hide'>
                 <a href = '#'>FIsdfsdfRST</a>
                 <a href = '#'>SECOND</a>
                 <a href = '#'>THIRD</a>
                 <a href = '#'>FOURTH</a>
                 <a href = '#'>FddFRTH</a>
+            </div>
         </header>
         
         <div class = 'auspic'>
@@ -144,10 +148,14 @@
     
     $(function() {
 
+//        Dev - Mobile Mode
+
         if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
             $('body').removeClass().addClass('mobile');
-
+            $('.dev-mobile').hide();
         }
+
+//        Dev - Flex Toggles
     
         $('#dev-desktop').on('click',function(e) {
             $('body').removeClass()
@@ -165,6 +173,12 @@
           console.log($('.dev-test'));
               $('.dev-test').slideToggle();
       });
+
+//        Menu
+        $('.mob-menu').on('click',function(e) {
+           $('.menu').toggleClass('hide');
+        });
+
     });
 
   </script>
