@@ -51,9 +51,9 @@
                 <img src = 'img/playscapes.jpg' alt = 'Natural Playscapes'/>
                 <div class="title">Natural Playsacpes</div>
             </a>
-            <a href = '#'><img src = 'img/playscapes.jpg' alt = 'Natural Playscapes'</a>
-            <a href = '#'><img src = 'img/playscapes.jpg' alt = 'Natural Playscapes'</a>
-            <a href = '#'><img src = 'img/playscapes.jpg' alt = 'Natural Playscapes'</a>
+            <a href = '#'><img src = 'img/playscapes.jpg' alt = 'Natural Playscapes'/></a>
+            <a href = '#'><img src = 'img/playscapes.jpg' alt = 'Natural Playscapes'/></a>
+            <a href = '#'><img src = 'img/playscapes.jpg' alt = 'Natural Playscapes'/></a>
         </div>
         
     </div>
@@ -61,7 +61,7 @@
             </a>
     
     <div class = 'section-title'>
-        <h2>Our Projects</h1>
+        <h2>Our Projects</h2>
     </div>
     
     <div class = 'content'>
@@ -85,7 +85,7 @@
       <div class = 'quote-box-bg'></div>
        <div class = 'quote-box-inner'>
         <p>
-            <itatlic>“Would you like to provide a safe environment that offers diverse experiences that promote children's learning and development? “Would you like to provide a safe environment that offers diverse</itatlic>
+            “Would you like to provide a safe environment that offers diverse experiences that promote children's learning and development? “Would you like to provide a safe environment that offers diverse
             <br><br>
             <strong>By John</strong>
         </p>
@@ -93,7 +93,7 @@
     </div>
 
     <div class = 'section-title section-title-under'>
-          <h2>Ausplay Social</h1>
+          <h2>Ausplay Social</h2>
     </div>
 
       <div class = 'content'>
@@ -143,8 +143,9 @@
     
     $(function() {
 
-        if ($('body').width() <= 320) {
+        if ($(window).width() <= 320) {
             $('body').removeClass().addClass('mobile');
+
         }
     
         $('#dev-desktop').on('click',function(e) {
