@@ -469,7 +469,7 @@ body[class='mobile'] .auspic {
 }
 body[class='mobile'] .menu {
   flex-direction: column;
-  min-width: 100%;
+  flex-basis: 100%;
 }
 body[class='mobile'] .menu a {
   padding-top: 0;
