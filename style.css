@@ -187,7 +187,7 @@ h2 {
 }
 .dev-test a {
   font-size: 1.5em;
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.35);
   flex: 2;
   padding: 20px;
   color: white;
@@ -218,34 +218,40 @@ header {
   display: flex;
 }
 header .logo {
-  flex: 4;
-  display: block;
+  flex: 3;
   min-width: 20%;
-  padding-top: 20px;
+}
+header .logo img {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px 0 20px 0;
 }
 .menu {
   display: flex;
   flex: 8;
-  align-items: center;
+  align-items: stretch;
   text-align: center;
 }
 .menu a {
   flex: 1;
   padding: 20px;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  padding: 80px 20px 70px 20px;
   text-decoration: none;
   color: #535353;
   font-weight: bold;
   font-size: 1.3em;
+  display: flex;
+  align-items: center;
+}
+.menu a span {
+  flex: 1;
+  padding-top: 20px;
 }
 .menu a:hover {
   background-color: #f6f6f6;
 }
 .mob-menu {
   display: none;
-  flex: 2;
+  flex: 1;
   background-color: darkmagenta;
   min-width: 20%;
 }
@@ -254,7 +260,7 @@ header .logo {
 }
 .auspic {
   width: 100%;
-  height: 400px;
+  height: 516px;
   background: url('img/header.jpg') center 0%;
   background-size: cover;
 }
@@ -263,16 +269,18 @@ header .logo {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding: 3%;
 }
 .box a {
   flex: 1 1 20%;
   display: block;
   position: relative;
+  margin-left: 1em;
 }
 .box a .title {
   position: absolute;
   left: 0;
-  bottom: 5%;
+  bottom: 10%;
   width: 80%;
   background-color: rgba(0, 166, 156, 0.8);
   padding: 10px;
@@ -284,12 +292,12 @@ header .logo {
 .box img {
   width: 100%;
 }
-.box3 a {
-  margin: 15px;
-}
 .half {
   flex-basis: 50%;
-  padding: 20px;
+  padding: 0;
+}
+.half p {
+  padding: 2em;
 }
 .home-intro {
   line-height: 30px;
@@ -312,13 +320,13 @@ header .logo {
 }
 .quote-box {
   width: 100%;
-  margin-top: 120px;
+  margin-top: 60px;
   position: relative;
   padding-top: 4%;
   padding-bottom: 5%;
 }
 .quote-box .quote-box-bg {
-  margin-left: -100px;
+  margin-left: -80px;
   width: 130%;
   height: 100%;
   position: absolute;
@@ -394,12 +402,26 @@ header .logo {
 .footer-contact {
   width: 100%;
   display: flex;
+  background-image: url('img/title-background.jpg');
+  flex-wrap: wrap;
 }
 .footer-contact a {
-  flex: 1 1 100%;
+  flex: 1;
   padding: 30px;
-  background-color: rgba(0, 166, 156, 0.8);
-  border: solid 1px white;
+  background-color: rgba(0, 192, 180, 0.8);
+  border: solid 1px rgba(255, 255, 255, 0.5);
+  color: white;
+  text-decoration: none;
+  align-items: center;
+  display: flex;
+}
+.footer-contact a span {
+  flex: 2;
+}
+.footer-contact a i {
+  text-align: center;
+  flex: 1;
+  font-size: 2em;
 }
 .footer-contact a:hover {
   background-color: rgba(0, 217, 204, 0.8);
@@ -409,14 +431,18 @@ header .logo {
   background-color: #25b756;
   height: 100px;
 }
-body[class='mobile'] {
-  background-color: rgba(0, 0, 0, 0.88);
+body[class='mobile'] h2 {
+  font-size: 2em;
+  padding: 10px;
+}
+body[class='mobile'] .facebook {
+  display: none;
 }
 body[class='mobile'] .wrap {
   width: 320px;
 }
-body[class='mobile'] .content {
-  font-size: 2em;
+body[class='mobile'] .half {
+  flex-basis: 100%;
 }
 body[class='mobile'] .rez {
   display: none;
@@ -435,8 +461,13 @@ body[class='mobile'] .mob-menu {
 body[class='mobile'] .half {
   flex-basis: 100%;
 }
+body[class='mobile'] .box {
+  padding: 0;
+  margin: 1% 0 1% 0;
+}
 body[class='mobile'] .box a {
   min-width: 300px;
+  margin: 0;
 }
 body[class='mobile'] .quote-box-bg {
   transform: none;
@@ -444,17 +475,38 @@ body[class='mobile'] .quote-box-bg {
 body[class='mobile'] .footer-contact {
   flex-direction: column;
 }
+body[class='mobile'] .section-title-under {
+  padding-top: 0;
+  margin-top: 0;
+}
 body[class='mobile'] .hide {
   display: none;
 }
-body[class='tablet'] {
-  background-color: rgba(0, 0, 0, 0.88);
+body[class='mobile'] .aus-news {
+  margin: 0;
+}
+body[class='mobile'] .aus-news ul {
+  margin: 0;
+  padding: 0;
+}
+body[class='mobile'] .aus-news ul li {
+  flex-direction: column;
+}
+body[class='mobile'] .aus-news ul li img {
+  width: 100%;
+  padding: 0 0 10px 0;
 }
 body[class='tablet'] .facebook {
   display: none;
 }
+body[class='tablet'] .half {
+  flex-basis: 100%;
+}
 body[class='tablet'] .wrap {
   width: 800px;
+}
+body[class='tablet'] .menu a {
+  font-size: 1em;
 }
 body[class='tablet'] .auspic {
   height: 300px;
@@ -462,6 +514,7 @@ body[class='tablet'] .auspic {
 }
 body[class='tablet'] .box a {
   min-width: 300px;
+  margin-left: 5px;
 }
 body[class='tablet'] .footer-contact a {
   flex-wrap: wrap;
