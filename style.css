@@ -490,13 +490,24 @@ body[class='mobile'] .half {
 body[class='mobile'] .box {
   padding: 0;
   margin: 1% 0 1% 0;
+  display: block;
 }
 body[class='mobile'] .box a {
   width: 100%;
+  flex: 1;
   margin: 0;
 }
 body[class='mobile'] .quote-box-bg {
   transform: none;
+}
+body[class='mobile'] .quote-box {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+body[class='mobile'] .quote-box-inner p {
+  font-size: 1em;
+  line-height: 28px;
+  font-style: normal;
 }
 body[class='mobile'] .footer-contact {
   flex-direction: column;
@@ -517,6 +528,7 @@ body[class='mobile'] .aus-news ul {
 }
 body[class='mobile'] .aus-news ul li {
   flex-direction: column;
+  border: 0;
 }
 body[class='mobile'] .aus-news ul li img {
   width: 100%;

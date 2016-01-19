@@ -402,16 +402,29 @@ header {
   .box {
     padding: 0;
     margin: 1% 0 1% 0;
+    display: block;
   }
 
 .box a {
   width: 100%;
+  flex: 1;
   margin: 0;
 }
 
 .quote-box-bg {
     transform: none;
     }
+
+  .quote-box {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  .quote-box-inner p {
+    font-size: 1em;
+    line-height: 28px;
+    font-style: normal;
+  }
 
 .footer-contact {
     flex-direction: column;
@@ -433,6 +446,7 @@ header {
       padding:0;
       li {
         flex-direction: column;
+        border: 0;
         img {
           width: 100%;
           padding: 0 0 10px 0;
