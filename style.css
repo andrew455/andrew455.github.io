@@ -456,6 +456,7 @@ body[class='mobile'] header {
 }
 body[class='mobile'] header .logo {
   margin-top: 10px;
+  flex: 3 3 50%;
 }
 body[class='mobile'] header .logo img {
   text-align: center;

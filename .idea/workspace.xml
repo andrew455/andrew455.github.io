@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="920505bc-7419-4583-92db-9cdbe18e0ffb" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style.css" afterPath="$PROJECT_DIR$/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style.less" afterPath="$PROJECT_DIR$/style.less" />
     </list>
@@ -30,8 +29,8 @@
       <file leaf-file-name="style.less" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/style.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5162374">
-              <caret line="388" column="11" selection-start-line="388" selection-start-column="11" selection-end-line="388" selection-end-column="11" />
+            <state vertical-scroll-proportion="0.5968645">
+              <caret line="364" column="18" selection-start-line="364" selection-start-column="18" selection-end-line="364" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -41,9 +40,9 @@
         <entry file="file://$PROJECT_DIR$/style.css">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-24.344828">
-              <caret line="567" column="0" selection-start-line="567" selection-start-column="0" selection-end-line="567" selection-end-column="0" />
+              <caret line="568" column="0" selection-start-line="568" selection-start-column="0" selection-end-line="568" selection-end-column="0" />
               <folding>
-                <marker date="1453179412492" expanded="true" signature="7476:7510" placeholder="{...}" />
+                <marker date="1453179532501" expanded="true" signature="7493:7527" placeholder="{...}" />
               </folding>
             </state>
           </provider>
@@ -300,7 +299,13 @@
       <option name="project" value="LOCAL" />
       <updated>1453179175633</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Resize">
+      <created>1453179426533</created>
+      <option name="number" value="00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1453179426533</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -366,7 +371,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="405" column="1" selection-start-line="405" selection-start-column="1" selection-end-line="405" selection-end-column="1" />
           <folding>
-            <marker date="1453179412492" expanded="true" signature="7476:7510" placeholder="{...}" />
+            <marker date="1453179532501" expanded="true" signature="7493:7527" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -456,9 +461,9 @@
     <entry file="file://$PROJECT_DIR$/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-24.344828">
-          <caret line="567" column="0" selection-start-line="567" selection-start-column="0" selection-end-line="567" selection-end-column="0" />
+          <caret line="568" column="0" selection-start-line="568" selection-start-column="0" selection-end-line="568" selection-end-column="0" />
           <folding>
-            <marker date="1453179412492" expanded="true" signature="7476:7510" placeholder="{...}" />
+            <marker date="1453179532501" expanded="true" signature="7493:7527" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -475,8 +480,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/style.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5162374">
-          <caret line="388" column="11" selection-start-line="388" selection-start-column="11" selection-end-line="388" selection-end-column="11" />
+        <state vertical-scroll-proportion="0.5968645">
+          <caret line="364" column="18" selection-start-line="364" selection-start-column="18" selection-end-line="364" selection-end-column="18" />
           <folding />
         </state>
       </provider>
