@@ -73,7 +73,6 @@ body {
     width: 100%;
     margin: auto;
   h2 {
-    margin-bottom: 0;
     padding-bottom: 0;
 
   }
@@ -152,10 +151,10 @@ header {
         .title {
             position: absolute;
             left: 0;
-            bottom: 10%;
-            width: 80%;
+            bottom: 15px;
+            //width: 65%;
             background-color: @blue-fade;
-            padding: 10px;
+            padding: 10px 20px 10px 10px;
             color: white;
         }
     }
@@ -164,6 +163,9 @@ header {
     }
     img {
         width: 100%;
+    }
+    img:hover {
+      //-webkit-filter: brightness(1.2);
     }
 }
 
@@ -209,8 +211,6 @@ header {
     margin-top: 60px;
 //    padding-left: 100px;
     position: relative;
-    padding-top: 4%;
-    padding-bottom: 5%;
     .quote-box-bg {
         margin-left: -80px;
         width: 130%;
@@ -231,6 +231,7 @@ header {
         align-items: center;
         max-width: 1200px;
         flex-wrap: wrap;
+      padding: 70px 0 70px 0;
         p {
             flex: 1 1 100%;
             padding: 30px;
@@ -338,6 +339,12 @@ h2 {
   padding: 10px;
 }
 
+  .content {
+    h2 {
+      margin-bottom: 0;
+    }
+  }
+
   .facebook {
     display: none;
   }
@@ -363,6 +370,7 @@ header {
   .logo {
     margin-top:10px;
     flex: 3 3 50%;
+    padding-left:10px;
     img {
       text-align: center;
       width: 100%;
@@ -412,19 +420,27 @@ header {
   margin: 0;
 }
 
+  .social {
+    margin-top: -25px;
+  }
+
 .quote-box-bg {
     transform: none;
     }
 
   .quote-box {
     margin-top: 0;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
   }
 
   .quote-box-inner p {
     font-size: 1em;
     line-height: 28px;
     font-style: normal;
+  }
+
+  .quote-box-inner {
+    padding: 30px 0 30px 0;
   }
 
 .footer-contact {
@@ -469,6 +485,13 @@ body[class='tablet'] {
     padding: 10px;
   }
 
+  .content {
+    h2{
+      margin-bottom: 0;
+    }
+
+  }
+
 .facebook {
   display: none;
 }
@@ -506,4 +529,19 @@ body[class='tablet'] {
     }
 }
 
+  .section-title {
+    margin-bottom: 20px;
+  }
+
+  .social {
+    margin-top: -25px;
+  }
+
+  .aus-news {
+    margin: 0;
+    ul {
+      margin:0;
+      padding:0;
+    }
+    }
 }

@@ -213,7 +213,6 @@ h2 {
   margin: auto;
 }
 .content h2 {
-  margin-bottom: 0;
   padding-bottom: 0;
 }
 header {
@@ -284,10 +283,9 @@ header .logo img {
 .box a .title {
   position: absolute;
   left: 0;
-  bottom: 10%;
-  width: 80%;
+  bottom: 15px;
   background-color: rgba(0, 166, 156, 0.8);
-  padding: 10px;
+  padding: 10px 20px 10px 10px;
   color: white;
 }
 .box a:hover {
@@ -326,8 +324,6 @@ header .logo img {
   width: 100%;
   margin-top: 60px;
   position: relative;
-  padding-top: 4%;
-  padding-bottom: 5%;
 }
 .quote-box .quote-box-bg {
   margin-left: -80px;
@@ -349,6 +345,7 @@ header .logo img {
   align-items: center;
   max-width: 1200px;
   flex-wrap: wrap;
+  padding: 70px 0 70px 0;
 }
 .quote-box .quote-box-inner p {
   flex: 1 1 100%;
@@ -439,6 +436,9 @@ body[class='mobile'] h2 {
   font-size: 2em;
   padding: 10px;
 }
+body[class='mobile'] .content h2 {
+  margin-bottom: 0;
+}
 body[class='mobile'] .facebook {
   display: none;
 }
@@ -457,6 +457,7 @@ body[class='mobile'] header {
 body[class='mobile'] header .logo {
   margin-top: 10px;
   flex: 3 3 50%;
+  padding-left: 10px;
 }
 body[class='mobile'] header .logo img {
   text-align: center;
@@ -498,17 +499,23 @@ body[class='mobile'] .box a {
   flex: 1;
   margin: 0;
 }
+body[class='mobile'] .social {
+  margin-top: -25px;
+}
 body[class='mobile'] .quote-box-bg {
   transform: none;
 }
 body[class='mobile'] .quote-box {
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 body[class='mobile'] .quote-box-inner p {
   font-size: 1em;
   line-height: 28px;
   font-style: normal;
+}
+body[class='mobile'] .quote-box-inner {
+  padding: 30px 0 30px 0;
 }
 body[class='mobile'] .footer-contact {
   flex-direction: column;
@@ -539,6 +546,9 @@ body[class='tablet'] h2 {
   font-size: 3em;
   padding: 10px;
 }
+body[class='tablet'] .content h2 {
+  margin-bottom: 0;
+}
 body[class='tablet'] .facebook {
   display: none;
 }
@@ -565,4 +575,17 @@ body[class='tablet'] .box a {
 body[class='tablet'] .footer-contact a {
   flex-wrap: wrap;
   min-width: 45%;
+}
+body[class='tablet'] .section-title {
+  margin-bottom: 20px;
+}
+body[class='tablet'] .social {
+  margin-top: -25px;
+}
+body[class='tablet'] .aus-news {
+  margin: 0;
+}
+body[class='tablet'] .aus-news ul {
+  margin: 0;
+  padding: 0;
 }

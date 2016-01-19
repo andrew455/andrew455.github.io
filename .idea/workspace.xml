@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="920505bc-7419-4583-92db-9cdbe18e0ffb" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/aus-logo.png" afterPath="$PROJECT_DIR$/img/aus-logo.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style.css" afterPath="$PROJECT_DIR$/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style.less" afterPath="$PROJECT_DIR$/style.less" />
     </list>
@@ -29,8 +31,8 @@
       <file leaf-file-name="style.less" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/style.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5968645">
-              <caret line="364" column="18" selection-start-line="364" selection-start-column="18" selection-end-line="364" selection-end-column="18" />
+            <state vertical-scroll-proportion="0.3594625">
+              <caret line="429" column="0" selection-start-line="429" selection-start-column="0" selection-end-line="429" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -39,10 +41,10 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-24.344828">
-              <caret line="568" column="0" selection-start-line="568" selection-start-column="0" selection-end-line="568" selection-end-column="0" />
+            <state vertical-scroll-proportion="-29.310345">
+              <caret line="591" column="0" selection-start-line="591" selection-start-column="0" selection-end-line="591" selection-end-column="0" />
               <folding>
-                <marker date="1453179532501" expanded="true" signature="7493:7527" placeholder="{...}" />
+                <marker date="1453181476541" expanded="true" signature="6549:6596" placeholder="{...}" />
               </folding>
             </state>
           </provider>
@@ -51,8 +53,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.75862">
-              <caret line="203" column="0" selection-start-line="203" selection-start-column="0" selection-end-line="203" selection-end-column="0" />
+            <state vertical-scroll-proportion="-15.24138">
+              <caret line="167" column="30" selection-start-line="167" selection-start-column="30" selection-end-line="167" selection-end-column="30" />
               <folding>
                 <element signature="n#style#0;n#iframe#0;n#div#1;n#div#0;n#div#8;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -85,7 +87,7 @@
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="x" value="1226" />
-    <option name="width" value="1334" />
+    <option name="width" value="1335" />
     <option name="height" value="1040" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -305,11 +307,17 @@
       <option name="project" value="LOCAL" />
       <updated>1453179426533</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Resize">
+      <created>1453179539335</created>
+      <option name="number" value="00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1453179539335</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1226" y="0" width="1334" height="1040" extended-state="0" />
+    <frame x="1226" y="0" width="1335" height="1040" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23101266" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -371,7 +379,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="405" column="1" selection-start-line="405" selection-start-column="1" selection-end-line="405" selection-end-column="1" />
           <folding>
-            <marker date="1453179532501" expanded="true" signature="7493:7527" placeholder="{...}" />
+            <marker date="1453181476541" expanded="true" signature="6549:6596" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -460,18 +468,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-24.344828">
-          <caret line="568" column="0" selection-start-line="568" selection-start-column="0" selection-end-line="568" selection-end-column="0" />
+        <state vertical-scroll-proportion="-29.310345">
+          <caret line="591" column="0" selection-start-line="591" selection-start-column="0" selection-end-line="591" selection-end-column="0" />
           <folding>
-            <marker date="1453179532501" expanded="true" signature="7493:7527" placeholder="{...}" />
+            <marker date="1453181476541" expanded="true" signature="6549:6596" placeholder="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.75862">
-          <caret line="203" column="0" selection-start-line="203" selection-start-column="0" selection-end-line="203" selection-end-column="0" />
+        <state vertical-scroll-proportion="-15.24138">
+          <caret line="167" column="30" selection-start-line="167" selection-start-column="30" selection-end-line="167" selection-end-column="30" />
           <folding>
             <element signature="n#style#0;n#iframe#0;n#div#1;n#div#0;n#div#8;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
@@ -480,8 +488,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/style.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5968645">
-          <caret line="364" column="18" selection-start-line="364" selection-start-column="18" selection-end-line="364" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.3594625">
+          <caret line="429" column="0" selection-start-line="429" selection-start-column="0" selection-end-line="429" selection-end-column="0" />
           <folding />
         </state>
       </provider>
