@@ -193,7 +193,18 @@ header {
 
 .box3 {
   a {
-    //margin: 15px;
+    .title {
+      background-color: @aus-blue;
+      bottom: 5px;
+      padding: 10px;
+      width: 100%;
+      line-height: 25px;
+    }
+  }
+  a:hover {
+    .title {
+      background-color: @aus-green;
+    }
   }
 }
 
@@ -540,7 +551,7 @@ header {
       img {
         text-align: center;
         width: 100%;
-        max-width: 180px;
+        max-width: 120px;
         padding: 10px 0 20px 0;
       }
     }
@@ -579,7 +590,7 @@ header {
   }
 
   .box a {
-    min-width: 300px;
+    min-width: 323px;
     margin-left: 5px;
   }
 
@@ -592,6 +603,10 @@ header {
     .cover {
       width: 60%;
     }
+  }
+
+  .box3 a {
+    //margin-bottom: 20px;
   }
 
   .social {
@@ -611,6 +626,10 @@ header {
 ///////////////////////
 
 .wrap-mobile() {
+
+  #why-ausplay {
+    display: none;
+  }
 
   .wrap {
     width: 320px;
@@ -640,6 +659,10 @@ header {
       font-size: 1em;
       line-height: 1.7em;
     }
+  }
+
+  .video-wrapper {
+    padding-bottom: 49.25%; /* 16:9 */
   }
 
   .rez {
@@ -730,13 +753,18 @@ body[class='mobile'] {
 @media all and (max-width: 640px) {
   .wrap-tablet();
   .wrap-mobile();
+  body {
+    .wrap {
+      width: 100%;
+    }
+  }
 }
 
 body[class='tablet'] {
   .wrap-tablet();
 }
 
-@media all and (min-width: 321px) and (max-width: 1000px) {
+@media all and (min-width: 641px) and (max-width: 1000px) {
   .wrap-tablet();
   body {
     .wrap {

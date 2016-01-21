@@ -350,6 +350,16 @@ header .logo img {
 .box img {
   width: 100%;
 }
+.box3 a .title {
+  background-color: #00a69c;
+  bottom: 5px;
+  padding: 10px;
+  width: 100%;
+  line-height: 25px;
+}
+.box3 a:hover .title {
+  background-color: #8cc63f;
+}
 .half {
   flex-basis: 50%;
   padding: 0;
@@ -656,7 +666,7 @@ body[class='mobile'] header .logo {
 body[class='mobile'] header .logo img {
   text-align: center;
   width: 100%;
-  max-width: 180px;
+  max-width: 120px;
   padding: 10px 0 20px 0;
 }
 body[class='mobile'] .menu {
@@ -690,7 +700,7 @@ body[class='mobile'] .auspic a {
   display: none;
 }
 body[class='mobile'] .box a {
-  min-width: 300px;
+  min-width: 323px;
   margin-left: 5px;
 }
 body[class='mobile'] .section-title {
@@ -711,6 +721,9 @@ body[class='mobile'] .social .aus-news {
 body[class='mobile'] .social .aus-news ul {
   margin: 0;
   padding: 0;
+}
+body[class='mobile'] #why-ausplay {
+  display: none;
 }
 body[class='mobile'] .wrap {
   width: 320px;
@@ -734,6 +747,10 @@ body[class='mobile'] .half h3 {
 body[class='mobile'] .half p {
   font-size: 1em;
   line-height: 1.7em;
+}
+body[class='mobile'] .video-wrapper {
+  padding-bottom: 49.25%;
+  /* 16:9 */
 }
 body[class='mobile'] .rez {
   display: none;
@@ -855,7 +872,7 @@ body[class='mobile'] .footer {
   header .logo img {
     text-align: center;
     width: 100%;
-    max-width: 180px;
+    max-width: 120px;
     padding: 10px 0 20px 0;
   }
   .menu {
@@ -889,7 +906,7 @@ body[class='mobile'] .footer {
     display: none;
   }
   .box a {
-    min-width: 300px;
+    min-width: 323px;
     margin-left: 5px;
   }
   .section-title {
@@ -910,6 +927,9 @@ body[class='mobile'] .footer {
   .social .aus-news ul {
     margin: 0;
     padding: 0;
+  }
+  #why-ausplay {
+    display: none;
   }
   .wrap {
     width: 320px;
@@ -933,6 +953,10 @@ body[class='mobile'] .footer {
   .half p {
     font-size: 1em;
     line-height: 1.7em;
+  }
+  .video-wrapper {
+    padding-bottom: 49.25%;
+    /* 16:9 */
   }
   .rez {
     display: none;
@@ -1001,6 +1025,9 @@ body[class='mobile'] .footer {
   .footer {
     display: none;
   }
+  body .wrap {
+    width: 100%;
+  }
 }
 body[class='tablet'] .mb {
   margin-bottom: 1em;
@@ -1054,7 +1081,7 @@ body[class='tablet'] header .logo {
 body[class='tablet'] header .logo img {
   text-align: center;
   width: 100%;
-  max-width: 180px;
+  max-width: 120px;
   padding: 10px 0 20px 0;
 }
 body[class='tablet'] .menu {
@@ -1088,7 +1115,7 @@ body[class='tablet'] .auspic a {
   display: none;
 }
 body[class='tablet'] .box a {
-  min-width: 300px;
+  min-width: 323px;
   margin-left: 5px;
 }
 body[class='tablet'] .section-title {
@@ -1110,7 +1137,7 @@ body[class='tablet'] .social .aus-news ul {
   margin: 0;
   padding: 0;
 }
-@media all and (min-width: 321px) and (max-width: 1000px) {
+@media all and (min-width: 641px) and (max-width: 1000px) {
   .mb {
     margin-bottom: 1em;
   }
@@ -1163,7 +1190,7 @@ body[class='tablet'] .social .aus-news ul {
   header .logo img {
     text-align: center;
     width: 100%;
-    max-width: 180px;
+    max-width: 120px;
     padding: 10px 0 20px 0;
   }
   .menu {
@@ -1197,7 +1224,7 @@ body[class='tablet'] .social .aus-news ul {
     display: none;
   }
   .box a {
-    min-width: 300px;
+    min-width: 323px;
     margin-left: 5px;
   }
   .section-title {
