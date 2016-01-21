@@ -1,19 +1,11 @@
-/* CSS Normalize */
-article,aside,details,figcaption,figure,footer,header,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */
-input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}ol, ul {list-style: none;}
+@import 'reset';
+@import 'dev';
+@import 'setup';
 
-/* Box-sizing border-box */
-* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
-
-    @font-face {
-        font-family: typografix;
-        src: url(fonts/Typografix-demo.otf);
-    }
-
-@blue-fade: fade(#00a69c, 80%);
-@aus-blue: #00a69c;
-@text: #828282;
-@menu: #535353;
+@font-face {
+  font-family: typografix;
+  src: url(fonts/Typografix-demo.otf);
+}
 
 p {
   color: @text;
@@ -21,323 +13,611 @@ p {
 }
 
 h2 {
-  font-size: 4em;
+  font-size: 5em;
   color: @aus-blue;
   flex: 1;
-  padding: 40px;
-  font-family: typografix, arial;
-  font-weight:100;
+  padding: 60px;
+  .font(typografix);
+  font-weight: 100;
   text-align: center;
 }
 
+h3 {
+  .font(Open Sans);
+  font-size: 2.5em;
+  color: @text;
+  font-weight: 100;
+  text-align: left;
+  width: 100%;
+}
+
 .flex {
-    display: flex;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.dev-test {
-    border: solid 1px green;
-    background-color: dodgerblue;
-    display: flex;
-    text-align: center;
-    a {
-        font-size: 1.5em;
-        text-shadow: 2px 2px 2px rgba(0,0,0,0.35);
-        flex: 2;
-        padding: 20px;
-        color: white;
-        text-decoration: none;
-    }
-    a:hover {
-        background-color: darken(dodgerblue,10%);
-    }
+.mt {
+  margin-top: 4em;
 }
-#dev-close {flex: 1;}
 
+.mb {
+  margin-bottom: 4em;
+}
 
-/* Some default styles to make each box visible */
 body {
+  .font(Open Sans);
 }
 
 .wrap {
-    max-width: 100%;
-    display: flex;
-    flex-direction: column;
-//    height: 100vh;
-    margin: auto;
-    overflow: hidden;
-
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  overflow: hidden;
 }
 
 .content {
-    max-width: 1200px;
-    width: 100%;
-    margin: auto;
-  h2 {
-    padding-bottom: 0;
-
-  }
+  max-width: 1360px;
+  width: 100%;
+  margin: auto;
+  padding: 20px;
 }
 
 header {
-    width: 100%;
-    flex-wrap: wrap;
-    display: flex;
-    //padding: 1em 0 1em 0;
-    .logo {
-        flex: 3;
-        min-width: 20%;
-      img {
-        width: 100%;
-        max-width: 300px;
-        padding: 10px 0 20px 0;
-      }
+  width: 100%;
+  flex-wrap: wrap;
+  display: flex;
+  .logo {
+    flex: 2.5;
+    min-width: 20%;
+    img {
+      width: 100%;
+      max-width: 250px;
+      padding: 10px 0 20px 0;
     }
+  }
 }
-.menu{
+
+.menu {
   display: flex;
   flex: 8;
   align-items: stretch;
   text-align: center;
-    a {
-      flex: 1;
-      padding: 20px;
-      text-decoration: none;
-      color: @menu;
-      font-weight: bold;
-      font-size: 1.3em;
-      display: flex;
-      align-items: center;
-      span {
-        flex: 1;
-        padding-top:20px;
-      }
-    }
-    a:hover {
-      background-color: #f6f6f6;
-    }
-}
-.mob-menu {
-    display: none;
+  a {
     flex: 1;
-    min-width: 20%;
+    padding: 20px;
+    text-decoration: none;
+    color: @menu;
+    font-weight: bold;
+    font-size: 1.3em;
+    display: flex;
+    align-items: center;
+    span {
+      flex: 1;
+      padding-top: 20px;
+    }
+  }
+  a:hover {
+    background-color: #f6f6f6;
+  }
+}
+
+.mob-menu {
+  display: none;
+  flex: 1;
+  min-width: 20%;
   list-style-type: none;
   text-decoration: none;
   color: @aus-blue;
   font-size: 1.5em;
-}
-
-.mob-menu:hover {
-    //background-color: darken(darkmagenta,10%);
-}
-
-.auspic {
-    width: 100%;
-    height: 516px;
-    background: url('img/header.jpg') center 0%;
-    background-size: cover;
-}
-
-.box {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 3%;
-    a {
-        flex: 1 1 20%;
-        display: block;
-        position: relative;
-        margin-left: 1em;
-        .title {
-            position: absolute;
-            left: 0;
-            bottom: 15px;
-            //width: 65%;
-            background-color: @blue-fade;
-            padding: 10px 20px 10px 10px;
-            color: white;
-        }
-    }
-    a:hover {
-        background-color: #fff;
-    }
-    img {
-        width: 100%;
-    }
-    img:hover {
-      //-webkit-filter: brightness(1.2);
-    }
-}
-
-.box3 {
-    a {
-        //margin: 15px;
-    }
-}
-
-.half {
-    flex-basis: 50%;
-    padding: 0;
-  p {
-    padding: 2%;
+  :hover {
+    //background-color: green;
   }
 }
 
+.auspic {
+  width: 100%;
+  height: 500px;
+  background: url('img/header.jpg') center top;
+  background-size: cover;
+  h2 {
+    padding-bottom: 0;
+    color: white;
+    margin-top: 80px;
+    margin-bottom: 0;
+    font-size: 4.5em;
+  }
+  p {
+    font-size: 2.5em;
+    .font(Open Sans);
+    color: #d6d6d6;
+    text-align: center;
+    margin: 0;
+    margin-top: -30px;
+  }
+  a {
+    display: block;
+    text-align: center;
+    width: 20%;
+    border-radius: 8px;
+    margin: 15px auto 0 auto;
+    padding: 10px 20px 10px 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: solid 1px white;
+    color: white;
+    .font(Open Sans);
+    text-decoration: none;
+    font-size: 1.5em;
+    transition: all 0.5s linear;
+  }
+  a:hover {
+    background-color: @aus-blue;
+  }
+}
+
+.box {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  a {
+    flex: 1 1 20%;
+    display: block;
+    position: relative;
+    margin-left: 1em;
+    .title {
+      position: absolute;
+      left: 0;
+      bottom: 15px;
+      //width: 65%;
+      background-color: @blue-fade;
+      padding: 10px 20px 10px 10px;
+      color: white;
+    }
+  }
+  a:first-child {
+    margin: 0;
+  }
+  a:hover {
+    background-color: white;
+  }
+  img {
+    width: 100%;
+  }
+  img:hover {
+    //-webkit-filter: brightness(1.2);
+  }
+}
+
+.box3 {
+  a {
+    //margin: 15px;
+  }
+}
+
+.half {
+  flex-basis: 50%;
+  padding: 0;
+  h3 {
+    margin: 0;
+  }
+  p {
+    font-size: 1.2em;
+    line-height: 45px;
+  }
+  a {
+    color: @aus-blue;
+    display: block;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.3em;
+    margin-bottom: 20px;
+    padding: 20px 0 20px 0;
+    //transform: skewX(20deg);
+    transition: padding 0.1s ease-in-out;
+    span {
+      //transform: skewX(-20deg);
+      display: block;
+    }
+  }
+  a:hover {
+    background-color: @aus-blue;
+    color: white;
+    padding: 20px;
+  }
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 53.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.flex-40 {
+  flex-basis: 40%;
+  padding-right: 40px;
+}
+
+.flex-60 {
+  flex-basis: 60%;
+}
+
 .home-intro {
-    line-height: 30px;
+  line-height: 30px;
+}
+
+.wideling {
+  width: 100%;
+  height: 350px;
+  background-color: @aus-blue;
+  margin: 10px 0 10px 0;
+  position: relative;
+  overflow: hidden;
+  color: white;
+  img {
+    margin-left: 15px;
+    width: 60%;
+  }
+  .cover {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    right: -10px;
+    top: 0;
+    transform: skewX(-15deg);
+    background-color: @aus-blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .placer {
+    width: 80%;
+    transform: skewX(15deg);
+    p {
+      color: white;
+    }
+    h3 {
+      color: white;
+      margin: 0;
+    }
+  }
+}
+
+.wideling-alt {
+  background-color: @aus-green;
+  img {
+    float: right;
+    margin-right: 15px;
+  }
+  .cover {
+    background-color: @aus-green;
+    left: -10px;
+  }
 }
 
 .section-title {
-    width: 100%;
-    max-height: 800px;
-    text-align: center;
-    background: url('img/title-background.jpg') 50% 50%;
-    background-size: cover;
-    display: flex;
-    z-index: -101;
+  width: 100%;
+  max-height: 800px;
+  text-align: center;
+  background: url('img/title-background.jpg') 50% 50%;
+  background-size: cover;
+  display: flex;
+  z-index: -101;
   //margin-bottom: 5em;
-    h2 {
-      color: white;
-    }
+  h2 {
+    color: white;
+  }
 }
 
 .section-title-under {
-    padding-top: 100px;
-    margin-top: -100px;
+  padding-top: 100px;
+  margin-top: -100px;
 }
 
 .quote-box {
-    width: 100%;
-    margin-top: 60px;
-//    padding-left: 100px;
-    position: relative;
-    .quote-box-bg {
-        margin-left: -80px;
-        width: 130%;
-        height: 100%;
-        position: absolute;
-        left: 0;
-        top: 0;
-        background-color: #00a69c;
-        transform: rotate(3.5deg);
-        z-index: -100;
+  width: 100%;
+  margin-top: 60px;
+  //    padding-left: 100px;
+  position: relative;
+  .quote-box-bg {
+    margin-left: -80px;
+    width: 130%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #00a69c;
+    transform: rotate(3.5deg);
+    z-index: -100;
+  }
+  .quote-box-inner {
+    margin: auto;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1360px;
+    flex-wrap: wrap;
+    padding: 70px 0 70px 0;
+    p {
+      flex: 1 1 100%;
+      padding: 30px;
+      color: white;
+      .font(Calibri);
+      font-weight: 100;
+      font-style: italic;
+      line-height: 42px;
+      font-size: 1.7em;
     }
-    .quote-box-inner {
-        margin: auto;
-        width: 80%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        max-width: 1200px;
-        flex-wrap: wrap;
-      padding: 70px 0 70px 0;
-        p {
-            flex: 1 1 100%;
-            padding: 30px;
-            color: white;
-            font-family: calibri, Arial;
-            font-weight: 100;
-            font-style: italic;
-            line-height: 42px;
-            font-size: 1.7em;
-        }
-    }
+  }
 }
 
 .social {
-    display: flex;
-    margin-top: 1em;
-    .aus-news {
-        flex: 5;
-      margin-right: 2em;
-    }
-    .facebook {
-        flex: 2;
-      margin-top: 2em;
-    }
-    ul {
-      li {
-          display: flex;
-          align-items: flex-start;
-        border-bottom: solid 1px #a6a6a6;
-        padding: 2em 0 2em 0;
+  display: flex;
+  margin-top: 1em;
+  .aus-news {
+    flex: 5;
+    margin-right: 2em;
+  }
+  .facebook {
+    flex: 2;
+    margin-top: 2em;
+  }
+  ul {
+    li {
+      display: flex;
+      align-items: flex-start;
+      border-bottom: solid 1px #a6a6a6;
+      padding: 2em 0 2em 0;
 
-          img{
-            padding: 1em;
-            width: 40%;
-          }
-          .article {
-              flex: 1;
-              display: flex;
-              flex-direction: column;
-              padding: 10px;
-              h3 {
-                  color: @aus-blue;
-                  margin: 0;
-                  padding: 0;
-                font-size: 2em;
-                font-family: calibri, arial;
-              }
-            a {
-              color: @aus-blue;
-              text-decoration: none;
-              font-weight: bold;
-            }
-          }
+      img {
+        padding: 1em;
+        width: 40%;
+      }
+      .article {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        h3 {
+          color: @aus-blue;
+          margin: 0;
+          padding: 0;
+          font-size: 2em;
+          .font(Calibri)
+        }
+        a {
+          color: @aus-blue;
+          text-decoration: none;
+          font-weight: bold;
+        }
       }
     }
+  }
   ul li:last-child {
     border: none;
   }
 }
 
 .footer-contact {
-    width: 100%;
-    display: flex;
+  width: 100%;
+  display: flex;
   background-image: url('img/title-background.jpg');
   flex-wrap: wrap;
-    a {
-        flex: 1;
-        padding: 30px;
-        background-color: lighten(@blue-fade,5%);
-        border: solid 1px rgba(255,255,255,0.5);
-        color: white;
-        text-decoration: none;
-        align-items: center;
-        display: flex;
-
-      span {
-        flex: 2;
-      }
-      i {
-        text-align: center;
-        flex: 1;
-        font-size: 2em;
-      }
+  a {
+    flex: 1;
+    padding: 30px;
+    //background: lighten(@blue-fade, 5%)  linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.25098) 100%);
+    background: lighten(@blue-fade, 5%);
+    border: solid 1px rgba(255, 255, 255, 0.5);
+    color: white;
+    text-decoration: none;
+    align-items: center;
+    display: flex;
+    span {
+      flex: 2;
     }
-    a:hover {
-        background-color: lighten(@blue-fade, 10%);
+    i {
+      text-align: center;
+      flex: 1;
+      font-size: 2em;
     }
+  }
+  a:hover {
+    background-color: lighten(@blue-fade, 10%);
+  }
 }
 
 .footer {
+  width: 100%;
+  background-color: #222222;
+  padding: 20px 0 20px 0;
+  .footer-wrap {
+    max-width: 1360px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    ul {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      li {
+        flex: 1;
+        padding: 10px;
+        color: white;
+        a {
+          text-decoration: none;
+          color: @aus-blue;
+        }
+        a:hover {
+          color: white;
+        }
+      }
+    }
+    ul:last-child {
+      margin-right: 25px;
+    }
+  }
+}
+
+///////////////////////
+/////TABLET CLASS//////
+///////////////////////
+
+.wrap-tablet() {
+
+  .mb {
+    margin-bottom: 1em;
+  }
+
+  .mt {
+    margin-top: 1em;
+  }
+
+  .content {
+    padding: 5px;
+    h2 {
+      margin-bottom: 0;
+    }
+  }
+
+  .facebook {
+    display: none;
+  }
+
+  .half {
+    flex-basis: 100%;
+  }
+
+  .flex-40 {
+    padding: 0;
+  }
+
+  .box {
+    padding-top: 0;
+    a:nth-child(odd) {
+      margin-left: 0;
+    }
+  }
+
+  .footer-contact {
+    a {
+      flex-wrap: wrap;
+      min-width: 45%;
+    }
+  }
+
+  .hide {
+    display: none
+  }
+
+  h2 {
+    font-size: 3em;
+    padding: 10px;
+  }
+
+  .wrap {
+    width: 800px;
+  }
+
+  header {
+    align-items: center;
+    .logo {
+      margin-top: 10px;
+      flex: 3 3 50%;
+      padding-left: 10px;
+      img {
+        text-align: center;
+        width: 100%;
+        max-width: 180px;
+        padding: 10px 0 20px 0;
+      }
+    }
+  }
+
+  .menu {
+    flex-direction: column;
+    flex: 1 1 100%;
+    a {
+      padding-top: 0;
+      font-weight: 100;
+      border-top: solid 1px lighten(@menu, 50%);
+    }
+  }
+  .mob-menu {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    i {
+      flex: 1;
+    }
+  }
+
+  .auspic {
+    height: 300px;
     width: 100%;
-    background-color: #25b756;
-    height: 100px;
+    h2 {
+      font-size: 2em;
+    }
+    p {
+      display: none;
+    }
+    a {
+      display: none;
+    }
+  }
+
+  .box a {
+    min-width: 300px;
+    margin-left: 5px;
+  }
+
+  .section-title {
+    margin-bottom: 20px;
+  }
+
+  .wideling {
+    height: 250px;
+    .cover {
+      width: 60%;
+    }
+  }
+
+  .social {
+    margin-top: -25px;
+    .aus-news {
+      margin: 0;
+      ul {
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
 }
 
 ///////////////////////
 /////MOBILE CLASS//////
 ///////////////////////
 
-body[class='mobile'] {
-//background-color: rgba(0,0,0,0.88);
+.wrap-mobile() {
 
-h2 {
-  font-size: 2em;
-  padding: 10px;
-}
+  .wrap {
+    width: 320px;
+  }
+
+  h2 {
+    font-size: 2em;
+    padding: 10px;
+  }
 
   .content {
     h2 {
@@ -349,199 +629,115 @@ h2 {
     display: none;
   }
 
-.wrap {
-    width: 320px;
-}
-
-.half {
-  flex-basis: 100%;
-}
-
-//.content {
-//    font-size: 2em;
-//}
-
-.rez {
-    display: none;
-}
-
-header {
-  align-items: center;
-  .logo {
-    margin-top:10px;
-    flex: 3 3 50%;
-    padding-left:10px;
-    img {
-      text-align: center;
-      width: 100%;
-      max-width: 180px;
-      padding: 10px 0 20px 0;
+  .half {
+    flex-basis: 100%;
+    h3 {
+      font-size: 1.8em;
+    }
+    p {
+      font-size: 1em;
+      line-height: 1.7em;
     }
   }
-}
 
-.auspic {
+  .rez {
+    display: none;
+  }
+
+  .auspic {
     height: 200px;
     width: 100%;
-}
-
-.menu {
-    flex-direction: column;
-    flex: 1 1 100%;
-    a {
-      //background-color: @text;
-      padding-top: 0;
-      font-weight: 100;
-      border-top: solid 1px lighten(@menu,50%);
+    background-position: 0 0;
+    p {
+      display: none;
     }
-}
-.mob-menu {
-    display: flex;
-  align-items: center;
-  text-align: center;
-  i {
-    flex: 1;
   }
-}
 
-.half {
+  .half {
     flex-basis: 100%;
-}
+  }
 
   .box {
+    margin: 0;
     padding: 0;
-    margin: 1% 0 1% 0;
-    display: block;
+    a {
+      width: 100%;
+      flex: 1;
+      margin: 0;
+    }
   }
-
-.box a {
-  width: 100%;
-  flex: 1;
-  margin: 0;
-}
 
   .social {
     margin-top: -25px;
   }
 
-.quote-box-bg {
-    transform: none;
-    }
-
   .quote-box {
     margin-top: 0;
     margin-bottom: 5px;
+    .quote-box-bg {
+      transform: none;
+    }
+    .quote-box-inner {
+      padding: 30px 0 30px 0;
+      p {
+        font-size: 1em;
+        line-height: 28px;
+        font-style: normal;
+      }
+    }
   }
 
-  .quote-box-inner p {
-    font-size: 1em;
-    line-height: 28px;
-    font-style: normal;
-  }
-
-  .quote-box-inner {
-    padding: 30px 0 30px 0;
-  }
-
-.footer-contact {
+  .footer-contact {
     flex-direction: column;
-}
+  }
 
   .section-title-under {
     padding-top: 0;
     margin-top: 0;
   }
 
-    .hide {
-        display: none
-    }
-
-  .aus-news {
-    margin: 0;
-    ul {
+  .social {
+    .aus-news {
       margin: 0;
-      padding:0;
-      li {
-        flex-direction: column;
-        border: 0;
-        img {
-          width: 100%;
-          padding: 0 0 10px 0;
+      ul {
+        margin: 0;
+        padding: 0;
+        li {
+          flex-direction: column;
+          border: 0;
+          img {
+            width: 100%;
+            padding: 0 0 10px 0;
+          }
         }
       }
     }
   }
+
+  .footer {
+    display: none;
+  }
 }
 
-///////////////////////
-/////TABLET CLASS//////
-///////////////////////
+body[class='mobile'] {
+  .wrap-tablet();
+  .wrap-mobile();
+}
+
+@media all and (max-width: 640px) {
+  .wrap-tablet();
+  .wrap-mobile();
+}
 
 body[class='tablet'] {
-//background-color: rgba(0,0,0,0.88);
+  .wrap-tablet();
+}
 
-  h2 {
-    font-size: 3em;
-    padding: 10px;
-  }
-
-  .content {
-    h2{
-      margin-bottom: 0;
+@media all and (min-width: 321px) and (max-width: 1000px) {
+  .wrap-tablet();
+  body {
+    .wrap {
+      width: 100%;
     }
-
   }
-
-.facebook {
-  display: none;
-}
-
-  .half {
-    flex-basis: 100%;
-  }
-
-.wrap {
-    width: 800px;
-}
-
-.menu a {
-  font-size: 1em;
-}
-
-.auspic {
-    height: 300px;
-    width: 100%;
-}
-
-  .box {
-    padding-top: 0;
-  }
-
-.box a {
-    min-width: 300px;
-  margin-left: 5px;
-}
-
-.footer-contact {
-    a {
-    flex-wrap: wrap;
-    min-width: 45%;
-    }
-}
-
-  .section-title {
-    margin-bottom: 20px;
-  }
-
-  .social {
-    margin-top: -25px;
-  }
-
-  .aus-news {
-    margin: 0;
-    ul {
-      margin:0;
-      padding:0;
-    }
-    }
 }
