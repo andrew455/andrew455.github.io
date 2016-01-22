@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="920505bc-7419-4583-92db-9cdbe18e0ffb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/aus-logo.png" afterPath="$PROJECT_DIR$/img/aus-logo.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/header.jpg" afterPath="$PROJECT_DIR$/img/header.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/playscapes.jpg" afterPath="$PROJECT_DIR$/img/playscapes.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/playscapes2.jpg" afterPath="$PROJECT_DIR$/img/playscapes2.jpg" />
@@ -58,7 +57,7 @@
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.36560935">
-              <caret line="138" column="27" selection-start-line="138" selection-start-column="27" selection-end-line="138" selection-end-column="27" />
+              <caret line="138" column="28" selection-start-line="138" selection-start-column="28" selection-end-line="138" selection-end-column="28" />
               <folding>
                 <element signature="n#style#0;n#iframe#0;n#div#1;n#div#0;n#div#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -383,7 +382,13 @@
       <option name="project" value="LOCAL" />
       <updated>1453430529415</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Image Optimization">
+      <created>1453431078817</created>
+      <option name="number" value="00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1453431078817</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -435,7 +440,8 @@
     <MESSAGE value="Updates" />
     <MESSAGE value="Optimizing" />
     <MESSAGE value="Mini Css" />
-    <option name="LAST_COMMIT_MESSAGE" value="Mini Css" />
+    <MESSAGE value="Image Optimization" />
+    <option name="LAST_COMMIT_MESSAGE" value="Image Optimization" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -711,7 +717,7 @@
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.36560935">
-          <caret line="138" column="27" selection-start-line="138" selection-start-column="27" selection-end-line="138" selection-end-column="27" />
+          <caret line="138" column="28" selection-start-line="138" selection-start-column="28" selection-end-line="138" selection-end-column="28" />
           <folding>
             <element signature="n#style#0;n#iframe#0;n#div#1;n#div#0;n#div#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
