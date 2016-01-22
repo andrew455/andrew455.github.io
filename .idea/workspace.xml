@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="920505bc-7419-4583-92db-9cdbe18e0ffb" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style.css" afterPath="$PROJECT_DIR$/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style.less" afterPath="$PROJECT_DIR$/style.less" />
     </list>
     <ignored path="aus.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,8 +38,18 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7595993">
-              <caret line="3272" column="0" selection-start-line="3272" selection-start-column="0" selection-end-line="3272" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.91986644">
+              <caret line="3579" column="1" selection-start-line="3579" selection-start-column="1" selection-end-line="3579" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gulpfile.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gulpfile.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -83,6 +91,7 @@
         <option value="$PROJECT_DIR$/.htaccess" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/style.less" />
+        <option value="$PROJECT_DIR$/gulpfile.js" />
         <option value="$PROJECT_DIR$/style.css" />
       </list>
     </option>
@@ -394,7 +403,13 @@
       <option name="project" value="LOCAL" />
       <updated>1453431730637</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="prefixed">
+      <created>1453432478150</created>
+      <option name="number" value="00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1453432478150</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -448,7 +463,8 @@
     <MESSAGE value="Mini Css" />
     <MESSAGE value="Image Optimization" />
     <MESSAGE value="facebook remove" />
-    <option name="LAST_COMMIT_MESSAGE" value="facebook remove" />
+    <MESSAGE value="prefixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="prefixed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -723,10 +739,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7595993">
-          <caret line="3272" column="0" selection-start-line="3272" selection-start-column="0" selection-end-line="3272" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.91986644">
+          <caret line="3579" column="1" selection-start-line="3579" selection-start-column="1" selection-end-line="3579" selection-end-column="1" />
           <folding />
         </state>
       </provider>
