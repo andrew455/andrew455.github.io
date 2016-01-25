@@ -2315,12 +2315,11 @@ header .logo img {
   font-size: 4.5em;
 }
 .auspic p {
-  font-size: 2.5em;
+  font-size: 1.5em;
   font-family: Open Sans, helvetica, arial, sans-serif;
   color: #d6d6d6;
   text-align: center;
   margin: 0;
-  margin-top: -30px;
 }
 .auspic a {
   display: block;
@@ -2435,11 +2434,11 @@ header .logo img {
   height: 100%;
 }
 .flex-40 {
-  flex-basis: 40%;
+  flex-basis: 50%;
   padding-right: 40px;
 }
 .flex-60 {
-  flex-basis: 60%;
+  flex-basis: 50%;
 }
 .home-intro {
   line-height: 30px;
