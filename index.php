@@ -12,7 +12,7 @@
     <div class='content'>
 
         <div class='flex mt mb'>
-            <div class='flex-40 half'>
+            <div class='half first'>
                 <h3>Playground Designers</h3>
                 <p class='home-intro'>
                     At Ausplay, we believe every landscape is a playscape waiting to happen. Opportunities and ideas are
@@ -21,7 +21,7 @@
                 </p>
                 <a href="#"><span>See More</span></a>
             </div>
-            <div class='flex-60 half'>
+            <div class='half'>
                 <div class="video-wrapper">
                     <iframe width="560px" height="349px;" src="https://www.youtube.com/embed/O-KqN3yMubA" frameborder="0"
                             allowfullscreen></iframe>
@@ -94,31 +94,45 @@
     </div>
 
     <div class='content'>
-        <div class='box box3 mb'>
-            <a href='#'>
-                <img src='img/recent-pimpama.jpg' alt='Pimpama'/>
-                <div class="title"> <i class="fa fa-map-marker"></i>
-                    Pimpamaa Early Learning Center
-                    <br>
-                    Playground
-                </div>
-            </a>
-            <a href='#'>
-                <img src='img/recent-springfield.jpg' alt='Springfield Lakes'/>
-                <div class="title"> <i class="fa fa-map-marker"></i>
-                    Springfield Lakes Early Learning Center
-                    <br>
-                    Synthetic Turfing
-                </div>
-            </a>
-            <a href='#'>
-                <img src='img/recent-eastside.jpg' alt='Eastside'/>
-                <div class="title"> <i class="fa fa-map-marker"></i>
-                    Eastside Early Learning Center
-                    <br>
-                    Synthetic Turfing
-                </div>
-            </a>
+        <div class="box">
+            <div class="third">
+                <a href='#'>
+                    <div class="subthird">
+                        <img src='img/recent-springfield.jpg' alt='Springfield Lakes'/>
+                        <div class="title"> <i class="fa fa-map-marker"></i>
+                            Springfield Lakes Early Learning Center
+                            <br>
+                            Synthetic Turfing
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="third">
+                <a href='#'>
+                    <div class="subthird">
+                        <img src='img/recent-springfield.jpg' alt='Springfield Lakes'/>
+                        <div class="title"> <i class="fa fa-map-marker"></i>
+                            Springfield Lakes Early Learning Center
+                            <br>
+                            Synthetic Turfing
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="third">
+                <a href='#'>
+                    <div class="subthird">
+                        <img src='img/recent-springfield.jpg' alt='Springfield Lakes'/>
+                        <div class="title"> <i class="fa fa-map-marker"></i>
+                            Springfield Lakes Early Learning Center
+                            <br>
+                            Synthetic Turfing
+                        </div>
+                    </div>
+                </a>
+            </div>
         </div>
     </div>
 

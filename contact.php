@@ -9,7 +9,7 @@ include 'header.php';
 <div class="greyback">
     <div class="content">
         <div class="box">
-            <div class="flex-40 half">
+            <div class="half first">
                 <form action="" class='contact-form'>
                     <div class='form-line'><label for="input">Name</label><input type="text"></div>
                     <div class='form-line'><label for="input">Email</label><input type="text"></div>
@@ -22,7 +22,7 @@ include 'header.php';
                     </div>
                 </form>
             </div>
-            <div class="flex-60 half">
+            <div class="half">
                 <p>
                     <span class='text-blue'>Head Office:</span>
                     <br>

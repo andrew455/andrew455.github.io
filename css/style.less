@@ -83,7 +83,7 @@ header {
 
 .menu {
   display: flex;
-  flex: 8;
+  flex: 6;
   align-items: stretch;
   text-align: center;
   a {
@@ -91,7 +91,7 @@ header {
     text-decoration: none;
     color: @menu;
     font-weight: bold;
-    font-size: 1.3em;
+    font-size: 1.2em;
     display: flex;
     align-items: center;
     span {
@@ -101,6 +101,21 @@ header {
   }
   a:hover {
     background-color: #f6f6f6;
+  }
+}
+
+.subnav {
+  margin: 20px auto 40px;
+  background-color: #f6f6f6;
+  width: 100%;
+  max-width: 1360px;
+  a:hover, a.selected:hover {
+    background-color: @aus-green;
+    color: white;
+  }
+  a.selected {
+    background-color: @aus-blue;
+    color: white;
   }
 }
 
@@ -161,9 +176,9 @@ header {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: left;
   a {
-    flex: 1 1 20%;
+    flex: 1;
     display: block;
     position: relative;
     margin-left: 1em;
@@ -218,7 +233,7 @@ header {
 
 .half {
   flex-basis: 50%;
-  padding: 0;
+  padding: 10px;
   h3 {
     margin: 0;
   }
@@ -248,6 +263,61 @@ header {
   }
 }
 
+.subthird {
+  padding: 10px;
+}
+
+.third {
+  flex-basis: 33.33333%;
+  display: flex;
+  flex-direction: column;
+  h3 {
+    margin-top: 20px;
+  }
+  a {
+    //display: flex;
+    text-decoration: none;
+    flex-direction: column;
+    flex: 0 0 100%;
+    img {
+      max-height: 322px;
+      width: 100%;
+    }
+    .title {
+      position: relative;
+      background-color: @aus-blue;
+      display: block;
+      padding: 10px;
+      line-height: 25px;
+    }
+  }
+  a:hover {
+    .title {
+      background-color: @aus-green;
+    }
+  }
+}
+
+.first {
+  padding-right: 30px;
+}
+
+.about-half {
+  padding-right: 85px;
+}
+
+.about {
+  color: black;
+  h2 {
+    padding: 30px 0 0 0;
+    text-align: left;
+    font-size: 4em;
+  }
+  img {
+    padding-top: 100px;
+  }
+}
+
 .video-wrapper {
   position: relative;
   padding-bottom: 53.25%; /* 16:9 */
@@ -263,12 +333,11 @@ header {
 }
 
 .flex-40 {
-  flex-basis: 50%;
-  padding-right: 40px;
+  flex-basis: 40%;
 }
 
 .flex-60 {
-  flex-basis: 50%;
+  flex-basis: 60%;
 }
 
 .home-intro {
@@ -502,6 +571,11 @@ header {
   height: 500px;
 }
 
+.projects-pic {
+  background-image: url('../img/header-projects.jpg');
+  height: 500px;
+}
+
 .greyback {
   background-color: #f4f4f4;
 }
@@ -550,8 +624,11 @@ header {
   }
 }
 
-.maps iframe{
-  pointer-events: none;
+.maps {
+  height: 600px;
+  iframe {
+    pointer-events: none;
+  }
 }
 
 ///////////////////////
@@ -581,6 +658,10 @@ header {
 
   .half {
     flex-basis: 100%;
+  }
+
+  .third {
+    flex-basis: 50%;
   }
 
   .flex-40 {
@@ -730,6 +811,15 @@ header {
     p {
       font-size: 1em;
       line-height: 1.7em;
+    }
+  }
+
+  .third {
+    flex-basis: 100%;
+    a {
+      img {
+        max-height: 999px;
+      }
     }
   }
 

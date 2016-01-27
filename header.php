@@ -26,16 +26,16 @@
 
     <header>
         <div class="logo">
-            <a href='http://localhost/andrew455.github.io/'>
+            <a href='http://localhost:63342/aus/index.php'>
                 <img src="img/aus-logo.png" alt="Ausplay">
             </a>
         </div>
         <a class='mob-menu' href='#'><i class="fa fa-bars"></i></a>
         <div class='menu hide'>
-            <a href='#'><span>About</span></a>
-            <a href='#'><span>Services</span></a>
-            <a href='#'><span>Projects</span></a>
-            <a href='#'><span>News</span></a>
+            <a href='about.php'><span>About</span></a>
+            <a href='services.php'><span>Services</span></a>
+            <a href='projects.php'><span>Projects</span></a>
+            <a href='news.php'><span>News</span></a>
             <a href='contact.php'><span>Contact</span></a>
         </div>
     </header>
