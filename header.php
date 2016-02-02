@@ -26,16 +26,35 @@
 
     <header>
         <div class="logo">
-            <a href='http://localhost:63342/aus/index.php'>
+            <a href='index'>
                 <img src="img/aus-logo.png" alt="Ausplay">
             </a>
         </div>
         <a class='mob-menu' href='#'><i class="fa fa-bars"></i></a>
         <div class='menu hide'>
-            <a href='about.php'><span>About</span></a>
-            <a href='services.php'><span>Services</span></a>
-            <a href='projects.php'><span>Projects</span></a>
-            <a href='news.php'><span>News</span></a>
-            <a href='contact.php'><span>Contact</span></a>
+            <ul>
+                <li>
+                    <a href='about.php'><span>About</span></a>
+                    <div class="hover-nav">
+                        <a href="about">About Us</a>
+                        <a href="team">Our Team</a>
+                    </div>
+                </li>
+                <li>
+                    <a href='services.php'>
+                        <span>Services</span>
+                    </a>
+                    <div class="hover-nav">
+                        <a href="services">Our Process</a>
+                        <a href="playscapes">Natural Playscapes</a>
+                        <a href="active-youth-zones">Active Youth Zones</a>
+                        <a href="synthetic-turf">Synthetic Turf</a>
+                        <a href="rubber-softfall">Rubber Softfall</a>
+                    </div>
+                </li>
+                <li><a href='projects'><span>Projects</span></a></li>
+                <li><a href='news'><span>News</span></a></li>
+                <li><a href='contact'><span>Contact</span></a></li>
+            </ul>
         </div>
     </header>
