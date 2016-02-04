@@ -5,21 +5,21 @@
     <div class='auspic'>
         <!--<img src="img/header.jpg" alt="ausplay" />-->
         <h2>We turn landscapes into <span class='text-blue'>play</span><span class='text-green'>scapes</span></h2>
-        <p>Childcare Centres | School Parks | Commercial & Retail | Community Facilities</p>
-        <a href="#">View Gallery</a>
+        <p>Childcare Centres | Schools | Parks | Commercial & Retail | Community Facilities</p>
+        <a href="projects">View Gallery</a>
     </div>
 
     <div class='content'>
 
         <div class='flex mt mb'>
             <div class='half first'>
-                <h3>Playground Designers</h3>
                 <p class='home-intro'>
                     At Ausplay, we believe every landscape is a playscape waiting to happen. Opportunities and ideas are
                     endless as we can off er you quality, fully customised services from design through to construction,
                     to ensure your project is one of a kind.
                 </p>
-                <a href="#"><span>See More</span></a>
+
+                <a class = 'text-link' href="playscapes"><span>See More</span></a>
             </div>
             <div class='half'>
                 <div class="video-wrapper">
@@ -59,6 +59,7 @@
                         <h3>Australians</h3>
                         <p>At Ausplay, we believe every landscape is a playscape waiting to happen. Opportunities and
                             ideas are endless as we c</p>
+                        <a href="about">About Us</a>
                     </div>
                 </div>
             </div>
@@ -70,6 +71,7 @@
                         <h3>Experienced</h3>
                         <p>At Ausplay, we believe every landscape is a playscape waiting to happen. Opportunities and
                             ideas are endless as we c</p>
+                        <a href="projects">Our Projects</a>
                     </div>
                 </div>
             </div>
@@ -81,6 +83,7 @@
                         <h3>Futuristic</h3>
                         <p>At Ausplay, we believe every landscape is a playscape waiting to happen. Opportunities and
                             ideas are endless as we c</p>
+                        <a href="services">Our Process</a>
                     </div>
                 </div>
             </div>
@@ -93,48 +96,48 @@
         <h2>Our Projects</h2>
     </div>
 
-    <div class='content'>
-        <div class="box">
-            <div class="third">
-                <a href='#'>
-                    <div class="subthird">
-                        <img src='img/recent-springfield.jpg' alt='Springfield Lakes'/>
-                        <div class="title"> <i class="fa fa-map-marker"></i>
-                            Springfield Lakes Early Learning Center
-                            <br>
-                            Synthetic Turfing
-                        </div>
+<div class='content'>
+    <div class="box mb">
+        <div class="third">
+            <a href='springfield-lakes.php'>
+                <div class="subthird">
+                    <img src='img/recent-springfield.jpg' alt='Springfield Lakes'/>
+                    <div class="title"> <i class="fa fa-map-marker"></i>
+                        Springfield Lakes Early Learning Center
+                        <br>
+                        Synthetic Turfing
                     </div>
-                </a>
-            </div>
+                </div>
+            </a>
+        </div>
 
-            <div class="third">
-                <a href='#'>
-                    <div class="subthird">
-                        <img src='img/recent-springfield.jpg' alt='Springfield Lakes'/>
-                        <div class="title"> <i class="fa fa-map-marker"></i>
-                            Springfield Lakes Early Learning Center
-                            <br>
-                            Synthetic Turfing
-                        </div>
+        <div class="third">
+            <a href='springfield-lakes.php'>
+                <div class="subthird">
+                    <img src='img/recent-eastside.jpg' alt='Springfield Lakes'/>
+                    <div class="title"> <i class="fa fa-map-marker"></i>
+                        Eastside Early Learning Center
+                        <br>
+                        Natural Playscape
                     </div>
-                </a>
-            </div>
+                </div>
+            </a>
+        </div>
 
-            <div class="third">
-                <a href='#'>
-                    <div class="subthird">
-                        <img src='img/recent-springfield.jpg' alt='Springfield Lakes'/>
-                        <div class="title"> <i class="fa fa-map-marker"></i>
-                            Springfield Lakes Early Learning Center
-                            <br>
-                            Synthetic Turfing
-                        </div>
+        <div class="third">
+            <a href='springfield-lakes.php'>
+                <div class="subthird">
+                    <img src='img/recent-cannington.jpg' alt='Springfield Lakes'/>
+                    <div class="title"> <i class="fa fa-map-marker"></i>
+                        Cannington Early Learning Center
+                        <br>
+                        Synthetic Turfing
                     </div>
-                </a>
-            </div>
+                </div>
+            </a>
         </div>
     </div>
+</div>
 
     <div class='quote-box'>
         <div class='quote-box-bg'></div>
